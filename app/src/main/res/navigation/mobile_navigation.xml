@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/article_home">
+
+    <fragment
+        android:id="@+id/article_home"
+        android:name="com.dicoding.hagrinoscope.artikel.Article_Fragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_article_" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_camera"
+            app:destination="@id/navigation_camera" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="com.dicoding.hagrinoscope.predict.CameraUploadFragment"
+        android:label="Prediction"
+        tools:layout="@layout/fragment_camera_upload" >
+        <action
+            android:id="@+id/action_navigation_camera_to_navigation_home"
+            app:destination="@id/article_home" />
+    </fragment>
+
+
+</navigation>

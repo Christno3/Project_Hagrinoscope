@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hagrinoscope</string>
+    <string name="title_home">Home</string>
+    <string name="title_history">history</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="riwayat_chat_bot">Riwayat Chat Bot</string>
+    <string name="capture">Capture</string>
+
+
+</resources>
